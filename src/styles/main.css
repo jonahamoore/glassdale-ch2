@@ -1,0 +1,33 @@
+.Crim-Card{
+    padding-top: 2em;
+    border: 2px dotted black;
+    width: 20em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#contentcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dark-background{
+    background-color: #2b362e;
+    color: #fafcfb;
+  }
+  
+
+.header{
+    display: flex;
+}
+
+.officer-card{
+    padding-top: 2em;
+    border: 2px dotted black;
+    width: 20em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}

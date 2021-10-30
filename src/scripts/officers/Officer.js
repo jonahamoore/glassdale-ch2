@@ -1,6 +1,6 @@
 export const Officer = (Object) => {
     return `
-        <section>
+        <section class="officer-card">
         ${Object.name}
         </section>
     `
