@@ -1,7 +1,7 @@
 import { getOfficers, useOfficers } from "./OfficerDataProvider.js";
 import { CriminalList } from "../criminals/CriminalList.js";
 
-const contentTarget = document.querySelector("#filters__officer")
+const contentTarget = document.querySelector(".officer-dropdown")
 
 export const officerSelected = () => {
     getOfficers()
@@ -15,7 +15,7 @@ export const officerSelected = () => {
 const render = officerCollection => {
 
     contentTarget.innerHTML = `
-        <select class="dropdown" id="officerSelect">
+        <select class="dropdown" class="officer-dropdown">
             <option value="0">Please select an officer...</option>
             ${
                 officerCollection.map(officerObject => {

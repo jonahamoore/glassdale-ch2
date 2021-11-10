@@ -7,7 +7,7 @@ import { CriminalList } from "../criminals/CriminalList.js"
 
 // Get a reference to the DOM element where the <select> will be rendered
 
-const contentTarget = document.querySelector(".filters__crime")
+const contentTarget = document.querySelector(".conviction-dropdown")
 
 export const ConvictionSelect = () => {
     getConvictions()
@@ -29,7 +29,7 @@ const render = convictionsCollection => {
 
     
     contentTarget.innerHTML = `
-        <select class="dropdown" id="crimeSelect">
+        <select class="dropdown" class=".conviction-dropdown">
             <option value="0">Please select a crime...</option>
             ${
                 convictionsCollection.map(crimeObject => {
@@ -41,9 +41,9 @@ const render = convictionsCollection => {
     `
 }
 
-document.querySelector("#notes-nav-link").addEventListener("click", () => {
-    convictionsCollection()
-})
+// document.querySelector("#notes-nav-link").addEventListener("click", () => {
+//     convictionsCollection()
+// })
 
 const eventHub = document.querySelector("body")
 eventHub.addEventListener("change", (eventObject) => {

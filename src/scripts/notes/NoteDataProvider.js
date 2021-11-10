@@ -10,7 +10,6 @@ export const getNotes = () => {
         .then(cleanNotes => {
             notesArray = cleanNotes
         })
-
 }
 
 export const saveNote = (note) => {
@@ -20,5 +19,12 @@ export const saveNote = (note) => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(note)
+    })
+    // .then(getNotes)
+}
+
+export const deleteNote = (noteId) => {
+    return fetch(`http://localhost:8088/notes/${noteId}`, {
+        method: "DELETE"
     })
 }

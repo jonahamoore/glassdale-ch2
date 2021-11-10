@@ -1,7 +1,7 @@
 import { Location } from "./Locations.js";
 import { getLocations, useLocations  } from "./LocationDataProvider.js";
 
-const contentTarget = document.querySelector("#contentcontainer")
+const contentTarget = document.querySelector(".print-list")
 
 export const LocationList = () => {
     getLocations()
@@ -17,7 +17,11 @@ export const LocationList = () => {
 
         });
        
-        contentTarget.innerHTML = locationHTML
+        contentTarget.innerHTML = 
+        `
+    <h2>Facilities</h2>
+    ${locationHTML}
+    `
     
     });
 };

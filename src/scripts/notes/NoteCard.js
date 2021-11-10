@@ -1,7 +1,5 @@
-// "id": 1,
-// "noteText": "Este's a friend of mine",
-// "dateOfNote": "10/25/2021",
-// "suspect": "Este's husband",
+import { deleteNote } from "./NoteDataProvider.js";
+import { NoteList } from "./NoteList.js";
 
 export const Note = (Object) => {
     return `
@@ -9,6 +7,23 @@ export const Note = (Object) => {
         <h3>Suspect: ${Object.suspect}</h3>
         <p>Note Text: ${Object.noteText}</p>
         <p>Date: ${new Date(Object.dateOfNote).toLocaleDateString('en-US')}</p>
-        </div>
+        <button id="deleteNote--${Object.id}">Delete</button>
+        <button id="edit${Object.id}">Edit</button>
+        </div>  
     `
 }
+
+const eventHub = document.querySelector(".print-list")
+
+eventHub.addEventListener("click", Object => {
+    if (Object.target.id.startsWith("deleteNote")) {
+
+        const idToDelete = Object.target.id.split("--")[1]
+    
+
+        console.log(idToDelete)
+        deleteNote (idToDelete)
+        .then(NoteList)
+
+    }
+});
