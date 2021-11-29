@@ -11,7 +11,7 @@ export const getOfficers = () => {
     .then(dirtyMoney => dirtyMoney.json())  // Cleans our money
     .then(taco => {
         // fills our officers array with the array from the API
-        console.table(taco)
+        // console.table(taco)
         officers = taco
     })
 }

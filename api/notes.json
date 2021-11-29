@@ -1,16 +1,28 @@
 {
   "notes": [
     {
-      "noteText": "fixing my broken glassdale project",
-      "dateOfNote": "2021-11-09",
-      "suspect": "anyone at this point",
-      "id": 3
+      "id": 4,
+      "noteText": "no idea who killed who, but i could kill a burger with a fried egg on it",
+      "dateOfNote": "2021-11-10",
+      "criminalId": 1
     },
     {
-      "noteText": "no idea who killed who, but i could kill a burger with a fried egg on it",
-      "dateOfNote": "2021-11-09",
-      "suspect": "me in this case",
-      "id": 4
+      "id": 5,
+      "noteText": "this note needs edited",
+      "dateOfNote": "2021-11-11",
+      "criminalId": 2
+    },
+    {
+      "noteText": "dddd",
+      "dateOfNote": "2021-11-17",
+      "criminalId": 3,
+      "id": 6
+    },
+    {
+      "noteText": "ttt",
+      "dateOfNote": "2021-11-16",
+      "criminalId": 1,
+      "id": 7
     }
   ]
 }

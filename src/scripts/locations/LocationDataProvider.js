@@ -9,7 +9,7 @@ export const getLocations = () => {
         .then(dirtyLocations => dirtyLocations.json())
         .then(
             cleanLocations => {
-                console.table(cleanLocations)
+                // console.table(cleanLocations)
                 locationsArray = cleanLocations
         }
     )
